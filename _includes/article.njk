@@ -1,0 +1,10 @@
+{% include "header.njk" %}
+<main id="skip">
+<heading-anchors>
+<h2><a href="{{page.url}}" class="non">{{title}}</a></h2>
+<h3>{{description}}</h3>
+{{ content | safe }}
+</heading-anchors>
+</main>
+<hr/>
+{% include "footer.njk" %}

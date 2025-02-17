@@ -1,0 +1,26 @@
+---
+layout: base.njk
+---
+<table>
+<tbody>
+<tr>
+<td class="tidak">By <a href="{{metadata.author.url}}">{{metadata.author.name}}</a> on <time datetime="{{ page.date | htmlDateString }}">{{ page.date | readableDate }}</time></td>
+<td class="tidak end">Tags: {%- for tag in tags | filterTagList %}{%- set tagUrl %}/tags/{{ tag | slugify }}/{% endset %} <a href="{{ tagUrl }}">{{ tag }}</a>{%- if not loop.last %}, {% endif %}	{%- endfor %}</td>
+</tr>
+</tbody>
+</table>
+{{ content | safe }}
+{%- if collections.posts %}
+{%- set previousPost = collections.posts | getPreviousCollectionItem %}
+{%- set nextPost = collections.posts | getNextCollectionItem %}
+{%- if nextPost or previousPost %}
+<table>
+<thead>
+<tr>
+<th class="tidak">{%- if previousPost %}<a class="s non" href="{{ previousPost.url }}">← {{ previousPost.data.title }}</a>{% endif %}</th>
+<th class="tidak end">{%- if nextPost %}<a class="s non" href="{{ nextPost.url }}">{{ nextPost.data.title }} →</a>{% endif %}</th>
+</tr>
+</thead>
+</table>
+{%- endif %}
+{%- endif %}
