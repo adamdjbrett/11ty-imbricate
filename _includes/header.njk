@@ -1,0 +1,14 @@
+<header>
+<table>
+<thead>
+<tr>
+<th colspan="4"><h1><a href="{{metadata.url}}" class="s non">{{metadata.title}}</a></h1></th>
+</tr>
+</thead>
+<tbody>
+<tr class="center">
+{% for nav in metadata.navbar %}<td><a class="non" href="{{nav.url}}">{{nav.nav}}</a></td>{% endfor %}
+</tr>
+</tbody>
+</table>
+</header>
