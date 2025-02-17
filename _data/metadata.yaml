@@ -1,10 +1,11 @@
 title: "11ty Imbricate"
-description: "A 11ty Starter focus on speed peformance , super light by Adam Dj Brett"
+description: "A 11ty Starter focus on speed peformance, super light by Adam Dj Brett"
 language: "en"
 locale: en_US
 image: /img/logos.png
 favicon: /img/logos.png
-url: "http://localhost:8080"
+url: "https://imbricate.000000076.xyz/"
+#url: "http://localhost:8080"
 metasocial: 
  - facebook: "https://www.facebook.com/"
  - twitteruser: "@username"
