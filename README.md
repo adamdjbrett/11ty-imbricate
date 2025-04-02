@@ -2,7 +2,8 @@
 
 A project develop by [Adam Dj Brett](https://www.adamdjbrett.com)
 
-A 11ty Starter project super slim lightweight - focus on speed and peformance
+A 11ty Starter project super slim lightweight - focus on speed and peformance. 
+This website uses the [μ css framework](https://bafs.github.io/mu/).
 
 ![11ty Imbricate](mockup.jpg)
 
